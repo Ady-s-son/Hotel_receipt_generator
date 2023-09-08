@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Receipt Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hotel Receipt Generator</h1>
+        <form id="receipt-form">
+            <div class="form-group">
+                <label for="guest-name">Guest Name:</label>
+                <input type="text" id="guest-name" required>
+            </div>
+            <div class="form-group">
+                <label for="room-number">Room Number:</label>
+                <input type="text" id="room-number" required>
+            </div>
+            <div class="form-group">
+                <label for="check-in">Check-In Date:</label>
+                <input type="date" id="check-in" required>
+            </div>
+            <div class="form-group">
+                <label for="check-out">Check-Out Date:</label>
+                <input type="date" id="check-out" required>
+            </div>
+            <div class="form-group">
+                <label for="total-price">Total Price:</label>
+                <input type="text" id="total-price" required>
+            </div>
+            <button type="submit">Generate Receipt</button>
+            <button type="button" id="print-receipt">Print Receipt</button>
+        </form>
+        <div id="receipt"></div>
+    </div>
+<script src="script.js"></script>
+<footer>
+<p>Developed By <a href="https://www.instagram.com/ady.s.son/"> Ady</a> ♡
+</footer>
+</body>
+</html>

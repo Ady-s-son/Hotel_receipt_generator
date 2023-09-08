@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #111;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    
+}
+
+footer p {
+  text-align: center;
+}
+
+#receipt {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    #receipt, #receipt * {
+        visibility: visible;
+    }
+
+    #receipt {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+}
